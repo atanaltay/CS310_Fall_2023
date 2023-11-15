@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 
+import com.sabanciuniv.model.Address;
 import com.sabanciuniv.model.Supplier;
 
 public interface SupplierDAO extends MongoRepository<Supplier, String>{
@@ -21,4 +22,5 @@ public interface SupplierDAO extends MongoRepository<Supplier, String>{
 	@Query("{'address.city':?0}")
 	public List<Supplier> findByCityWithParam(String city);
 	
+
 }

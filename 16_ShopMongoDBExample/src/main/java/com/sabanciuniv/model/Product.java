@@ -1,14 +1,21 @@
 package com.sabanciuniv.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.DBRef;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document
 public class Product {
 
-
+	@Id
 	private String id;
 	private String name;
 	private int stock;
 	private double price;
 	
-
+	//Normalized relation
+	//SUpplier data will be eagerly loaded
+	@DBRef
 	private Supplier supplier;
 	
 	public Product(String name, int stock, double price, Supplier supplier) {
