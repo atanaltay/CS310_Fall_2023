@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ActivityExample</string>
+    <string name="btn_oktxt">Click me!</string>
+    <array name="cities">
+        <item>ISTANBUL</item>
+        <item>IZMIR</item>
+        <item>BURSA</item>
+        <item>ANKARA</item>
+        <item>ANTALYA</item>
+
+    </array>
+</resources>
